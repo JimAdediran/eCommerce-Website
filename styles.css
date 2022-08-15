@@ -1,3 +1,9 @@
+.product_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 65px;
+    row-gap: 73px;
+}
 .product_image{
     width: 275px;
     height: 240px;
@@ -6,9 +12,13 @@
     width: 30%;
     border: 2px solid black;
 }
-.product_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 65px;
-    row-gap: 73px;
+.add_to_cart_button{
+    background-color: #bf7631;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+.home{
+    background-image: url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    background-size: cover;
 }

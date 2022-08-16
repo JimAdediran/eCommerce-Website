@@ -1,3 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.pottery_pic{
+    width: 27px;
+    height: 24px;
+}
+.fontstyle{
+    color: white;
+}
 .product_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,7 +28,8 @@
     height: 240px;
 }
 .hr_product{
-    width: 30%;
+    margin-left: 0;
+    width: 60%;
     border: 2px solid black;
 }
 .add_to_cart_button{
@@ -21,4 +41,10 @@
 .home{
     background-image: url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
     background-size: cover;
+}
+.learn_more{
+    color: #bf7631;
+}
+#textboxid{
+    height: 75px;
 }

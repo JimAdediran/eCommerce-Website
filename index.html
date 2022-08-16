@@ -10,13 +10,16 @@
 <body>
     <header>
     <nav>
-        <li><a href="#home">HOME</li></a>
-        <li><a href="#products">PRODUCTS</li></a>
-        <li><a href="#about">ABOUT</li></a>
-        <li><a href="#contact">CONTACT</li></a>
+        <div class="navbar">
+            <a class="active" href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        
     </nav>
     <div>
-        <h3>CARA<img src = "assets/icons8-pottery-96.png"> CARA</h3>
+        <span><h3>CARA<img class="pottery_pic" src = "assets/icons8-pottery-96.png"> CARA</h3></span>
     </div>
     <div>
         <input type="text" id="search" name="search" value="">
@@ -25,12 +28,12 @@
     </header>
     <main:>
     <section class="home" id="home">
-        <div>
+        <div class="fontstyle">
             <strong>CERAMICS</strong><br>
             <strong>CRAFTED BY</strong><br>
             <strong>HAND...</strong>
         </div>
-        <div>
+        <div class="fontstyle">
             <strong>...FROM THE</strong><br>
             <strong>GROUND UP</strong>
         </div>
@@ -77,7 +80,7 @@
                 ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
-                <a href="bowlproducts.html">LEARN MORE</a>
+                <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                 <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
             </div>
             <div class="product">
@@ -93,7 +96,7 @@
                 ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
-                <a href="bowlproducts.html">LEARN MORE</a>
+                <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                 <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
                 <div class="product">
@@ -109,7 +112,7 @@
                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
-                    <a href="bowlproducts.html">LEARN MORE</a>
+                    <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
                 <div class="product">
@@ -125,7 +128,7 @@
                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
-                    <a href="bowlproducts.html">LEARN MORE</a>
+                    <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
                 <div class="product">
@@ -141,7 +144,7 @@
                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
-                    <a href="bowlproducts.html">LEARN MORE</a>
+                    <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                     </div>
                     <div class="product">
@@ -157,7 +160,7 @@
                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
-                        <a href="bowlproducts.html">LEARN MORE</a>
+                        <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                         <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                     </div>
                     <div class="product">
@@ -173,7 +176,7 @@
                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
-                        <a href="bowlproducts.html">LEARN MORE</a>
+                        <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                         <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                     </div>
                     <div class="product">
@@ -189,7 +192,7 @@
                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
-                        <a href="bowlproducts.html">LEARN MORE</a>
+                        <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                         <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                         </div>
                         <div class="product">
@@ -205,10 +208,21 @@
                             ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                             in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             </p>
-                            <a href="bowlproducts.html">LEARN MORE</a>
+                            <a class="learn_more" href="bowlproducts.html">LEARN MORE</a>
                             <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                         </div>
         </div>
+    </section>
+    <section id="contact">
+        <h2>CONTACT US</h2>
+        <hr>
+        <form style="text-align: center;" action="/action_page.php">
+            <label for="email">EMAIL</label><br>
+            <input type="email" id="email" name="email" value=""><br>
+            <label for="message">MESSAGE</label><br>
+            <input type="text" id="textboxid" name="message" value="">
+        </form>
+        <button class="add_to_cart_button" type="button">SEND</button>
     </section>
     </main:>
 </body>

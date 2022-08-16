@@ -48,3 +48,7 @@ html {
 #textboxid{
     height: 75px;
 }
+.footer_format{
+    background-color: #bf7631;
+    text-align: center;
+}

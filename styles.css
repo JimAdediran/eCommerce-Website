@@ -14,6 +14,15 @@ html {
     width: 27px;
     height: 24px;
 }
+.cylinder_pic{
+    width: 280px;
+    height: 250px;
+}
+.hr_section{
+    margin-left: 0;
+    width: 50%;
+    border: 2px solid black; 
+}
 .fontstyle{
     color: white;
 }
